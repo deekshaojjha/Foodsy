@@ -30,7 +30,7 @@ export default async function WriteReviewPage({
   }
 
   return (
-    <main className="rounded-3xl border border-foodsy-ink/10 bg-white p-6 shadow-sm">
+    <main className="animate-fade-up rounded-[2rem] border border-foodsy-line bg-foodsy-paper p-6 shadow-sm">
       <p className="text-sm font-semibold uppercase tracking-wide text-foodsy-red">Write a review</p>
       <h1 className="mt-2 font-display text-4xl font-semibold tracking-tight">{restaurant.name}</h1>
       <ReviewForm restaurantId={Number(restaurantId)} />
