@@ -21,11 +21,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${outfit.variable} ${fraunces.variable} bg-foodsy-cream font-sans text-foodsy-ink antialiased`}>
+      <body className={`${outfit.variable} ${fraunces.variable} bg-foodsy-yellow font-sans text-foodsy-ink antialiased`}>
         <div className="mx-auto min-h-screen max-w-xl px-4 py-8">
           <header className="mb-8 flex items-center justify-between">
             <Link href="/restaurant/1" className="flex items-center gap-3">
-              <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-foodsy-yellow text-lg font-bold text-foodsy-red">
+              <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-foodsy-red text-lg font-bold text-foodsy-yellow shadow-sm">
                 F
               </span>
               <span>
