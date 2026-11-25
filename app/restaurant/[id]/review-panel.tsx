@@ -41,7 +41,7 @@ export default function ReviewPanel({ restaurantId, restaurantName }: ReviewPane
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className="inline-flex rounded-full bg-foodsy-red px-6 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:-translate-y-0.5 hover:bg-foodsy-red-deep hover:shadow-md active:scale-95"
+        className="flex w-full justify-center rounded-full bg-foodsy-red px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition-all sm:inline-flex sm:w-auto hover:-translate-y-0.5 hover:bg-foodsy-red-deep hover:shadow-md active:scale-95"
       >
         Write a review
       </button>

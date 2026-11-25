@@ -134,9 +134,10 @@ export default async function RestaurantPage({
       )}
 
       {/* 7. Write a review */}
-      <Reveal>
+      {/* Never hidden by scroll animation: the main action must always be visible. */}
+      <div style={{ animationDelay: "250ms" }} className="animate-fade-up pb-4">
         <ReviewPanel restaurantId={Number(id)} restaurantName={restaurant.name} />
-      </Reveal>
+      </div>
     </main>
   );
 }

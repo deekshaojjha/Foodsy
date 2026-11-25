@@ -36,7 +36,9 @@ export default function Reveal({ children, delay = 0, className = "" }: RevealPr
           observer.disconnect();
         }
       },
-      { threshold: 0.15, rootMargin: "0px 0px -6% 0px" }
+      // threshold 0 = reveal as soon as one pixel is visible, so items at the very
+      // bottom of a short mobile page can never get stuck invisible.
+      { threshold: 0, rootMargin: "0px" }
     );
 
     observer.observe(element);
